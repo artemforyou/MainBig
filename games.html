@@ -10,23 +10,67 @@
             background: #0f2027;
             color: white;
         }
+
         header {
             background: #0b1a20;
             padding: 15px;
             display: flex;
             justify-content: space-between;
         }
+
         header h1 {
             margin: 0;
             color: #00c6ff;
         }
+
         nav a {
             color: white;
             margin-left: 15px;
             text-decoration: none;
         }
+
         .content {
             padding: 40px;
+        }
+
+        .games {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .game-card {
+            background: #132a33;
+            border-radius: 15px;
+            width: 220px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+        }
+
+        .game-card h3 {
+            margin: 10px;
+        }
+
+        .game-card button {
+            margin: 10px;
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background: #00c6ff;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .game-card button:hover {
+            background: #00a3cc;
         }
     </style>
 </head>
@@ -43,7 +87,19 @@
 
 <div class="content">
     <h2>Игры</h2>
-    <p>Здесь будут игры 🎮</p>
+
+    <div class="games">
+
+        <!-- КАРТОЧКА ИГРЫ -->
+        <div class="game-card">
+            <img src="game1.JPEG" alt="Игра">
+            <h3>My First Game</h3>
+            <button onclick="alert('Скоро будет доступно!')">
+                СКАЧАТЬ
+            </button>
+        </div>
+
+    </div>
 </div>
 
 </body>
