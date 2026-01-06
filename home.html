@@ -2,25 +2,60 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Main Big — Главная</title>
+    <title>Main Big</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #0f2027;
             color: white;
-            padding: 40px;
         }
-        h1 {
+
+        header {
+            background: #0b1a20;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
             color: #00c6ff;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00c6ff;
+        }
+
+        .content {
+            padding: 40px;
         }
     </style>
 </head>
 <body>
 
-<h1>Main Big</h1>
-<p>Ты попал на основной сайт 🎉</p>
-<p>Здесь дальше будут разделы, игры, новости и т.д.</p>
+<header>
+    <h1>Main Big</h1>
+    <nav>
+        <a href="home.html">Главная</a>
+        <a href="games.html">Игры</a>
+        <a href="about.html">О проекте</a>
+    </nav>
+</header>
+
+<div class="content">
+    <h2>Главная</h2>
+    <p>Добро пожаловать на Main Big 🚀</p>
+    <p>Это главный раздел сайта.</p>
+</div>
 
 </body>
 </html>
